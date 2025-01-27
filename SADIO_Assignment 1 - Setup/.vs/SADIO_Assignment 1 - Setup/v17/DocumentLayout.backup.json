@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF1BC11F-5CAC-4630-A9BF-16099F175FF4}|SADIO_Assignment 1 - Setup.vcxproj|C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BF1BC11F-5CAC-4630-A9BF-16099F175FF4}|SADIO_Assignment 1 - Setup.vcxproj|solutionrelative:SADIO_Assignment 1 - Setup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SADIO_Assignment 1 - Setup.cpp",
+              "DocumentMoniker": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp",
+              "RelativeDocumentMoniker": "SADIO_Assignment 1 - Setup.cpp",
+              "ToolTip": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp",
+              "RelativeToolTip": "SADIO_Assignment 1 - Setup.cpp",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-27T12:11:22.621Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
