@@ -2,7 +2,7 @@
     Assignment 01 - Setup
 
     Created by: SADIO (GDGRAP1-S22)
-    Latest revision: January 27, 2025, 8:15 PM
+    Latest revision: January 27, 2025, 9:44 PM
 
     Submitted on: January 27, 2025
 */
@@ -28,14 +28,14 @@ int main(void)
     //Array of vertices of the Octagon
     GLfloat verticesArray[]{
                     /* x,  y,   z */
-        /*Vertex 1*/ -0.1f, 1.f, 0.f,
-        /*Vertex 2*/ 0.1f, 1.f, 0.f,
-        /*Vertex 3*/ 0.f, 1.f, 0.f,
-        /*Vertex 4*/ 0.2f, 0.5f, 0.f,
-        /*Vertex 5*/ 0.2f, 0.5f, 0.f,
-        /*Vertex 6*/ 0.5f, 0.f, 0.f,
-        /*Vertex 7*/ -0.6f, 0.1f, 0.f,
-        /*Vertex 8*/ -0.6f, 0.1f, 0.f,
+        /*Vertex 1*/ 0.23f, 1.0f, 0.f,
+        /*Vertex 2*/ 0.5f, 0.72f, 0.f,
+        /*Vertex 3*/ 0.5f, 0.3f, 0.f,
+        /*Vertex 4*/ 0.23f, 0.0f, 0.f,
+        /*Vertex 5*/ -0.23f, 0.0f, 0.f,
+        /*Vertex 6*/ -0.5f, 0.3f, 0.f,
+        /*Vertex 7*/ -0.5f, 0.72f, 0.f,
+        /*Vertex 8*/ -0.23f, 1.0f, 0.f,
     };
 
     GLuint VAO, VBO;

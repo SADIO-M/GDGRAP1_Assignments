@@ -10,7 +10,7 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "SADIO_Assignment 1 - Setup.cpp",
               "ToolTip": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp",
               "RelativeToolTip": "SADIO_Assignment 1 - Setup.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-27T12:11:22.621Z",
               "EditorCaption": ""
