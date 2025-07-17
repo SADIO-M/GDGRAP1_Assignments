@@ -30,12 +30,6 @@ int main(void)
                     /* x,  y,   z */
         /*Vertex 1*/ 0.23f, 1.0f, 0.f,
         /*Vertex 2*/ 0.5f, 0.72f, 0.f,
-        /*Vertex 3*/ 0.5f, 0.3f, 0.f,
-        /*Vertex 4*/ 0.23f, 0.0f, 0.f,
-        /*Vertex 5*/ -0.23f, 0.0f, 0.f,
-        /*Vertex 6*/ -0.5f, 0.3f, 0.f,
-        /*Vertex 7*/ -0.5f, 0.72f, 0.f,
-        /*Vertex 8*/ -0.23f, 1.0f, 0.f,
     };
 
     GLuint VAO, VBO;
@@ -69,7 +63,7 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT);
 
         glBindVertexArray(VAO);
-        glDrawArrays(GL_POLYGON, 0, 8);
+        glDrawArrays(GL_LINES, 0, 2);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
