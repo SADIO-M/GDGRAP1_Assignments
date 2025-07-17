@@ -1,15 +1,17 @@
-/*
-    Assignment 01 - Setup
-
-    Created by: SADIO (GDGRAP1-S22)
-    Latest revision: January 27, 2025, 9:44 PM
-
-    Submitted on: January 27, 2025
-*/
-
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+#include <fstream>
+#include <sstream>
+#include <string>
+
+using namespace std;
+using namespace glm;
 
 int main(void)
 {
@@ -22,14 +24,64 @@ int main(void)
         return -1;
     }
 
+    float windowWidth = 800;
+    float windowHeight = 800;
+
     glfwMakeContextCurrent(window);
     gladLoadGL();
+
+    glViewport(0, 0, 800, 800);
+
+    mat4 projection = ortho(
+        -800.0f,
+         800.0f,
+        -800.0f,
+         800.0f,
+        -100.0f,
+         100.0f
+    );
+
+    GLuint vertexShader;
+    GLuint fragmentShader;
+    GLuint shaderProg = glCreateProgram();
+
+    // Setting up the vertex shader
+    fstream vertexSrc("Shaders/Line.vert");
+    stringstream vertexBuffer;
+    vertexBuffer << vertexSrc.rdbuf();
+    string vertexString = vertexBuffer.str();
+    const char* vert = vertexString.c_str();
+
+    // Setting up the fragment shader
+    fstream fragmentSrc("Shaders/Line.frag");
+    stringstream fragmentBuffer;
+    fragmentBuffer << fragmentSrc.rdbuf();
+    string fragmentString = fragmentBuffer.str();
+    const char* frag = fragmentString.c_str();
+
+    // Creation of the vertex shaders
+    vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertexShader, 1, &vert, NULL);
+    glCompileShader(vertexShader);
+
+    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShader, 1, &frag, NULL);
+    glCompileShader(fragmentShader);
+
+    // Attaching shaders and program linking
+    glAttachShader(shaderProg, vertexShader);
+    glAttachShader(shaderProg, fragmentShader);
+    glLinkProgram(shaderProg);
+
+    //Clean-up
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
 
     //Array of vertices of the Octagon
     GLfloat verticesArray[]{
                     /* x,  y,   z */
-        /*Vertex 1*/ 0.23f, 1.0f, 0.f,
-        /*Vertex 2*/ 0.5f, 0.72f, 0.f,
+        /*Vertex 1*/ 0.0f, 100.0f, 0.f,
+        /*Vertex 2*/ 0.0f, -750.0f, 0.f
     };
 
     GLuint VAO, VBO;
@@ -62,8 +114,14 @@ int main(void)
     while (!glfwWindowShouldClose(window)) {
         glClear(GL_COLOR_BUFFER_BIT);
 
+        glUseProgram(shaderProg);
+
         glBindVertexArray(VAO);
+        glLineWidth(1);
         glDrawArrays(GL_LINES, 0, 2);
+
+        unsigned int projLoc = glGetUniformLocation(shaderProg, "projection");
+        glUniformMatrix4fv(projLoc, 1, GL_FALSE, value_ptr(projection));
 
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -71,6 +129,7 @@ int main(void)
 
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
+    glDeleteProgram(shaderProg);
 
     glfwTerminate();
     return 0;

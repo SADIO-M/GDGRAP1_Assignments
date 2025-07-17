@@ -142,6 +142,10 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="SADIO_Assignment 1 - Setup.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Line.frag" />
+    <None Include="Shaders\Line.vert" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

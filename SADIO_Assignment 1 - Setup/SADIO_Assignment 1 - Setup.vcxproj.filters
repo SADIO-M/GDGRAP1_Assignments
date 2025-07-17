@@ -22,4 +22,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Line.frag" />
+    <None Include="Shaders\Line.vert" />
+  </ItemGroup>
 </Project>
