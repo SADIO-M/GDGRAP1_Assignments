@@ -22,29 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Line.vert",
-              "DocumentMoniker": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\Shaders\\Line.vert",
-              "RelativeDocumentMoniker": "Shaders\\Line.vert",
-              "ToolTip": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\Shaders\\Line.vert",
-              "RelativeToolTip": "Shaders\\Line.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-17T00:27:42.962Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -55,8 +34,7 @@
               "RelativeToolTip": "Shaders\\Line.frag",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-17T00:27:36.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T00:27:36.921Z"
             },
             {
               "$type": "Document",
@@ -64,12 +42,24 @@
               "Title": "SADIO_Assignment 1 - Setup.cpp",
               "DocumentMoniker": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp",
               "RelativeDocumentMoniker": "SADIO_Assignment 1 - Setup.cpp",
-              "ToolTip": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp*",
-              "RelativeToolTip": "SADIO_Assignment 1 - Setup.cpp*",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFAAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\SADIO_Assignment 1 - Setup.cpp",
+              "RelativeToolTip": "SADIO_Assignment 1 - Setup.cpp",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAwOQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-27T12:11:22.621Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Line.vert",
+              "DocumentMoniker": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\Shaders\\Line.vert",
+              "RelativeDocumentMoniker": "Shaders\\Line.vert",
+              "ToolTip": "C:\\Users\\Megan\\Documents\\GitHub\\GDGRAP1_Assignments\\SADIO_Assignment 1 - Setup\\Shaders\\Line.vert",
+              "RelativeToolTip": "Shaders\\Line.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-17T00:27:42.962Z"
             }
           ]
         }
